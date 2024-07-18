@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*modificacion de la barra*/
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #212127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1 100px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#miNombre{
+    font-size: 28px;
+    color: aqua;
+}
+
+.bars{
+    display: none;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li a{
+    display: block;
+    color: aqua;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav ul li a:hover{
+    color: #212127;
+    background-color: grey;
+}
+
+.nav ul li a:active{
+    color: #212127;
+    background-color: grey;
+}
+
+
+/*modificacion de inicio */
+#inicio{
+    text-align: center;
+    padding: 20em 0;
+    color: aqua;
+    background-image: url("../imagenes/inicio_portafo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*modificacion de sobre mi*/
+#sobreMi{
+    text-align: center;
+    color: aqua;
+    background-color: black;
+    padding: 20em 0;
+}
+
+#hr1{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#hr2{
+   margin-left: 35%;
+   margin-right: 35%;
+   margin-top: 20px;
+}
+
+#hr3{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+/*modificacion de portfolio*/
+#misProyectos{
+    background-color: black;
+    text-align: center;
+    color: aqua;
+    padding: 10em 0;
+}
+
+.img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.img{
+    mask-image: linear-gradient(aqua 80%, transparent);
+}
+
+/*modificacion de formulario*/
+
+
+#formulario{
+    background-image: url("../imagenes/fundoDeport.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20em 0;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario{
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+input, select{
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+input, select{
+    background: transparent;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+    border-color: #fff;
+}
+
+textarea{
+    background: transparent;
+    width: 260px;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 5px;
+    border-color: #fff;
+    text-align: center;
+}
+
+textarea{ 
+    margin: 1rem;
+}
+
+#enviar{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    
+}
+
+#MyB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#borde{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 120px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pie-pagina .grupo1 .box figure h1{
+    width: 100px;
+}
+
+.pie-pagina .grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redSocial a{
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redSocial a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+
+
+
+
+}
+
+@media(max-width:900px){
+    
+    header {
+        padding: 0px 0px;
+    }
+
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background-color: aqua;
+        margin: 5px 6px;
+    }
+    .nav {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 110vw;
+        background-color: #2e2f34;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav.active{
+        height: 450px;
+    }
+
+    .nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav.active ul{
+        opacity: 1;
+    }
+
+    .nav ul li a{
+        margin-top: 20px;
+    }
+}
